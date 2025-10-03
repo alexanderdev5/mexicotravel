@@ -280,7 +280,7 @@ export default function Header(_props: NavbarProps) {
       }`} 
            role="navigation" 
            aria-label="Main navigation">
-        <div className="max-w-8xl mx-auto px-1 sm:px-2 lg:px-10">
+        <div className="max-w-8xl mx-auto sm:px-2 lg:px-10">
           <div className={`flex justify-between items-center transition-all duration-300 ${
             isScrolled ? 'h-16' : 'h-20'
           }`}>

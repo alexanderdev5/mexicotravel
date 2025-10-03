@@ -173,8 +173,8 @@ export default function TopHeader({
   selectedLanguage 
 }: TopHeaderProps) {
   return (
-    <div className="py-2 bg-gradient-to-r from-blue-50 to-blue-100 text-blue-900 border-b border-blue-200/50 relative z-60">
-      <div className="max-w-8xl mx-auto px-1 sm:px-2 lg:px-10">
+    <div className="py-1.5 bg-gradient-to-r from-blue-50 to-blue-100 text-blue-900 border-b border-blue-200/50 relative z-60">
+      <div className="max-w-8xl mx-auto px-0.5 sm:px-1 lg:px-5">
         <div className="flex items-center justify-between h-10">
           {/* Marquee de Ofertas - Lado Izquierdo */}
           <div className="flex-1 overflow-hidden">

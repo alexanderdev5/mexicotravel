@@ -106,7 +106,7 @@ export function MobileMenu({
   setMenuOpen 
 }: MobileMenuProps) {
   return (
-    <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out  ${
+    <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out bg-white  ${
       menuOpen ? 'max-h-[90vh]  opacity-100 pb-4' : 'max-h-0 opacity-0'
     }`}>
       <div className="flex flex-col gap-1 pt-3 max-h-[90vh] overflow-y-auto">

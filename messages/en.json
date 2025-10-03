@@ -98,7 +98,22 @@
     "heroSubtitle": "From Cancun to Chichén Itzá, enjoy tours, beaches, culture, and unforgettable adventures in Mexico’s most stunning destinations.",
     "ctaExplore": "Explore Destinations",
     "ctaBook": "Book My Tour",
-    "imageAlt":"Image of Travel & Tours App Web"
+    "imageAlt":"Image of Travel & Tours App Web",
+    "Hero": {
+  "title": "Experience Mexico Like Never Before",
+  "subtitle": "Discover the magic hidden in every corner. From dreamlike beaches to cities full of history, we take you on journeys that turn travelers into true lovers of Mexico.",
+  "primaryButton": "Discover Experiences",
+  "secondaryButton": "Create My Route",
+  "imageUrl": "https://images.unsplash.com/photo-1668810074709-30f08bd3b12f?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "imageAlt": "Panoramic view of the Teotihuacán pyramids at sunrise",
+  "badge": "✨ 100% Authentic Experiences",
+  "trust": {
+    "check": "Certified local guides",
+    "star": "10,000+ happy travelers",
+    "heart": "Sustainable tourism"
+  }
+}
+
   },
   "NotFoundPage": {
     "title": "Page Not Found",

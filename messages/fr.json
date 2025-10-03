@@ -98,7 +98,22 @@
     "heroSubtitle": "De Cancún à Chichén Itzá, profitez de tours, de plages, de culture et d’aventures inoubliables dans les plus belles destinations du Mexique.",
     "ctaExplore": "Explorer les Destinations",
     "ctaBook": "Réserver mon Tour",
-    "imageAlt":"Image de l'application de voyage et de tours"
+    "imageAlt":"Image de l'application de voyage et de tours",
+    "Hero": {
+  "title": "Vivez le Mexique Comme Jamais Auparavant",
+  "subtitle": "Découvrez la magie cachée dans chaque recoin. Des plages de rêve aux villes chargées d’histoire, nous vous emmenons dans des expériences qui transforment les voyageurs en véritables amoureux du Mexique.",
+  "primaryButton": "Découvrir les Expériences",
+  "secondaryButton": "Créer Mon Itinéraire",
+  "imageUrl": "https://images.unsplash.com/photo-1668810074709-30f08bd3b12f?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+  "imageAlt": "Vue panoramique des pyramides de Teotihuacán au lever du soleil",
+  "badge": "✨ Expériences 100% Authentiques",
+  "trust": {
+    "check": "Guides locaux certifiés",
+    "star": "Plus de 10 000 voyageurs satisfaits",
+    "heart": "Tourisme durable"
+  }
+}
+
   },
   "NotFoundPage": {
     "title": "Page Introuvable",
