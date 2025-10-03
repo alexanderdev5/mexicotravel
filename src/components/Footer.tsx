@@ -29,6 +29,51 @@ interface PaymentMethod {
   icon: React.ReactNode;
 }
 
+// Iconos para títulos de secciones
+const SectionIcons = {
+  destinations: (
+    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z" />
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M15 11a3 3 0 11-6 0 3 3 0 016 0z" />
+    </svg>
+  ),
+  experiences: (
+    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M14 10l-2 1m0 0l-2-1m2 1v2.5M20 7l-2 1m2-1l-2-1m2 1v2.5M14 4l-2-1-2 1M4 7l2-1M4 7l2 1M4 7v2.5M12 21l-2-1m2 1l2-1m-2 1v-2.5M6 18l-2-1v-2.5M18 18l2-1v-2.5" />
+    </svg>
+  ),
+  company: (
+    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 21V5a2 2 0 00-2-2H7a2 2 0 00-2 2v16m14 0h2m-2 0h-5m-9 0H3m2 0h5M9 7h1m-1 4h1m4-4h1m-1 4h1m-5 10v-5a1 1 0 011-1h2a1 1 0 011 1v5m-4 0h4" />
+    </svg>
+  ),
+  support: (
+    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M18.364 5.636l-3.536 3.536m0 5.656l3.536 3.536M9.172 9.172L5.636 5.636m3.536 9.192L5.636 18.364M21 12a9 9 0 11-18 0 9 9 0 0118 0z" />
+    </svg>
+  ),
+  legal: (
+    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12h6m-6 4h6m2 5H7a2 2 0 01-2-2V5a2 2 0 012-2h5.586a1 1 0 01.707.293l5.414 5.414a1 1 0 01.293.707V19a2 2 0 01-2 2z" />
+    </svg>
+  ),
+  newsletter: (
+    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z" />
+    </svg>
+  ),
+  contact: (
+    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z" />
+    </svg>
+  ),
+  social: (
+    <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+      <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M21 12a9 9 0 01-9 9m9-9a9 9 0 00-9-9m9 9H3m9 9v-9m0-9v9" />
+    </svg>
+  )
+};
+
 // Datos del footer
 const socialMedia: SocialMedia[] = [
   {
@@ -177,6 +222,7 @@ export default function Footer() {
   const footerSections = [
     {
       title: t("destinations.title"),
+      icon: SectionIcons.destinations,
       links: [
         { href: "/destinos/playas", label: t("destinations.beaches") },
         { href: "/destinos/ciudades", label: t("destinations.cities") },
@@ -187,6 +233,7 @@ export default function Footer() {
     },
     {
       title: t("experiences.title"),
+      icon: SectionIcons.experiences,
       links: [
         { href: "/experiencias/gastronomia", label: t("experiences.gastronomy") },
         { href: "/experiencias/aventura", label: t("experiences.adventure") },
@@ -197,6 +244,7 @@ export default function Footer() {
     },
     {
       title: t("company.title"),
+      icon: SectionIcons.company,
       links: [
         { href: "/nosotros", label: t("company.about") },
         { href: "/blog", label: t("company.blog") },
@@ -207,6 +255,7 @@ export default function Footer() {
     },
     {
       title: t("support.title"),
+      icon: SectionIcons.support,
       links: [
         { href: "/ayuda", label: t("support.help") },
         { href: "/contacto", label: t("support.contact") },
@@ -217,6 +266,7 @@ export default function Footer() {
     },
     {
       title: t("legal.title"),
+      icon: SectionIcons.legal,
       links: [
         { href: "/privacidad", label: t("legal.privacy") },
         { href: "/terminos", label: t("legal.terms") },
@@ -228,33 +278,41 @@ export default function Footer() {
   ];
 
   return (
-    <footer className="bg-gradient-to-br from-gray-900 via-gray-800 to-gray-900 text-white">
+    <footer className="bg-gradient-to-br from-gray-50 via-white to-gray-100 text-gray-800 border-t border-gray-200">
       {/* Main Footer Content */}
       <div className="max-w-8xl mx-auto px-6 sm:px-8 lg:px-12 py-16">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 mb-16">
           {/* Brand & Newsletter Section */}
           <div className="space-y-6">
             <div className="flex items-center gap-3 group">
-              <div className="bg-gradient-to-br from-amber-500 to-orange-600 rounded-xl w-12 h-12 flex items-center justify-center text-white font-bold text-xl shadow-lg">
+              <div className="bg-gradient-to-br from-blue-500 to-blue-600 rounded-xl w-12 h-12 flex items-center justify-center text-white font-bold text-xl shadow-lg transform group-hover:scale-105 transition-all duration-300">
                 M
               </div>
               <div>
-                <h3 className="text-2xl font-bold bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent">
+                <h3 className="text-2xl font-bold bg-gradient-to-r from-blue-600 to-blue-800 bg-clip-text text-transparent">
                   {t("brand")}
                 </h3>
-                <p className="text-gray-400 text-sm">{t("tagline")}</p>
+                <p className="text-blue-600 font-medium text-sm">{t("tagline")}</p>
               </div>
             </div>
             
-            <p className="text-gray-300 max-w-md text-lg leading-relaxed">
+            <p className="text-gray-600 max-w-md text-lg leading-relaxed">
               {t("description")}
             </p>
 
             {/* Newsletter Subscription */}
             <div className="space-y-4">
-              <h4 className="font-semibold text-white">{t("newsletter.title")}</h4>
+              <div className="flex items-center gap-2">
+                <div className="text-blue-600">
+                  {SectionIcons.newsletter}
+                </div>
+                <h4 className="font-semibold text-gray-900">{t("newsletter.title")}</h4>
+              </div>
               {subscribed ? (
-                <div className="bg-green-500/20 border border-green-500/30 rounded-xl p-4 text-green-400">
+                <div className="bg-green-100 border border-green-200 rounded-xl p-4 text-green-700 flex items-center gap-2">
+                  <svg className="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M5 13l4 4L19 7" />
+                  </svg>
                   {t("newsletter.success")}
                 </div>
               ) : (
@@ -264,18 +322,18 @@ export default function Footer() {
                     value={email}
                     onChange={(e) => setEmail(e.target.value)}
                     placeholder={t("newsletter.placeholder")}
-                    className="flex-1 px-4 py-3 bg-white/10 border border-gray-600 rounded-xl placeholder-gray-400 text-white focus:outline-none focus:ring-2 focus:ring-amber-500 focus:border-transparent"
+                    className="flex-1 px-4 py-3 bg-white border border-gray-300 rounded-xl placeholder-gray-400 text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent transition-all duration-200 shadow-sm"
                     required
                   />
                   <button
                     type="submit"
-                    className="px-6 py-3 bg-gradient-to-r from-amber-500 to-orange-600 text-white font-semibold rounded-xl hover:from-amber-600 hover:to-orange-700 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl"
+                    className="px-6 py-3 bg-gradient-to-r from-blue-500 to-blue-600 text-white font-semibold rounded-xl hover:from-blue-600 hover:to-blue-700 transform hover:-translate-y-0.5 transition-all duration-200 shadow-lg hover:shadow-xl border border-blue-500"
                   >
                     {t("newsletter.subscribe")}
                   </button>
                 </form>
               )}
-              <p className="text-gray-400 text-sm">
+              <p className="text-gray-500 text-sm">
                 {t("newsletter.disclaimer")}
               </p>
             </div>
@@ -285,16 +343,20 @@ export default function Footer() {
           <div className="grid grid-cols-2 md:grid-cols-3 gap-8">
             {footerSections.map((section, index) => (
               <div key={index} className="space-y-4">
-                <h4 className="font-semibold text-white text-lg">
-                  {section.title}
-                </h4>
+                <div className="flex items-center gap-2">
+                  <span className="text-blue-600">{section.icon}</span>
+                  <h4 className="font-semibold text-gray-900 text-lg">
+                    {section.title}
+                  </h4>
+                </div>
                 <ul className="space-y-3">
                   {section.links.map((link, linkIndex) => (
                     <li key={linkIndex}>
                       <Link
                         href={link.href}
-                        className="text-gray-400 hover:text-amber-400 transition-colors duration-200 text-sm leading-relaxed"
+                        className="text-gray-600 hover:text-blue-600 transition-all duration-200 text-sm leading-relaxed flex items-center gap-2 group"
                       >
+                        <span className="w-1.5 h-1.5 bg-blue-200 rounded-full group-hover:bg-blue-500 transition-all duration-200"></span>
                         {link.label}
                       </Link>
                     </li>
@@ -306,26 +368,36 @@ export default function Footer() {
         </div>
 
         {/* Contact & Social Section */}
-        <div className="border-t border-gray-700 pt-12">
+        <div className="border-t border-gray-200 pt-12">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8 mb-8">
             {/* Contact Info */}
             <div className="space-y-4">
-              <h4 className="font-semibold text-white text-lg">
-                {t("contact.title")}
-              </h4>
+              <div className="flex items-center gap-2">
+                <div className="text-blue-600">
+                  {SectionIcons.contact}
+                </div>
+                <h4 className="font-semibold text-gray-900 text-lg">
+                  {t("contact.title")}
+                </h4>
+              </div>
               <div className="space-y-3">
                 {contactInfo.map((contact, index) => (
-                  <div key={index} className="flex items-center gap-3 text-gray-300">
-                    <span className="text-amber-500">{contact.icon}</span>
+                  <div key={index} className="flex items-center gap-3 text-gray-600 group">
+                    <span className="text-blue-500 group-hover:scale-110 transition-transform duration-200">
+                      {contact.icon}
+                    </span>
                     {contact.href ? (
                       <a
                         href={contact.href}
-                        className="hover:text-amber-400 transition-colors duration-200"
+                        className="hover:text-blue-600 transition-all duration-200 flex items-center gap-1 font-medium"
                       >
                         {contact.value}
+                        <svg className="w-3 h-3 opacity-0 group-hover:opacity-100 transition-opacity duration-200" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M10 6H6a2 2 0 00-2 2v10a2 2 0 002 2h10a2 2 0 002-2v-4M14 4h6m0 0v6m0-6L10 14" />
+                        </svg>
                       </a>
                     ) : (
-                      <span>{contact.value}</span>
+                      <span className="font-medium">{contact.value}</span>
                     )}
                   </div>
                 ))}
@@ -334,17 +406,22 @@ export default function Footer() {
 
             {/* Social Media */}
             <div className="space-y-4">
-              <h4 className="font-semibold text-white text-lg">
-                {t("social.title")}
-              </h4>
-              <div className="flex gap-4">
+              <div className="flex items-center gap-2">
+                <div className="text-blue-600">
+                  {SectionIcons.social}
+                </div>
+                <h4 className="font-semibold text-gray-900 text-lg">
+                  {t("social.title")}
+                </h4>
+              </div>
+              <div className="flex gap-3">
                 {socialMedia.map((social, index) => (
                   <a
                     key={index}
                     href={social.href}
                     target="_blank"
                     rel="noopener noreferrer"
-                    className={`w-10 h-10 bg-white/10 rounded-xl flex items-center justify-center text-gray-400 ${social.color} transition-all duration-200 hover:bg-white/20 hover:scale-110`}
+                    className={`w-10 h-10 bg-white border border-gray-200 rounded-xl flex items-center justify-center text-gray-600 ${social.color} transition-all duration-200 hover:border-blue-300 hover:shadow-md hover:scale-110`}
                     aria-label={social.name}
                   >
                     {social.icon}
@@ -355,13 +432,16 @@ export default function Footer() {
           </div>
 
           {/* Trust Badges */}
-          <div className="bg-white/5 rounded-2xl p-6 mb-8">
+          <div className="bg-gradient-to-r from-blue-50 to-blue-100 rounded-2xl p-6 mb-8 border border-blue-200">
             <div className="flex flex-col md:flex-row items-center justify-between gap-6">
               <div className="text-center md:text-left">
-                <h5 className="font-semibold text-white mb-2">
+                <h5 className="font-semibold text-gray-900 mb-2 flex items-center justify-center md:justify-start gap-2">
+                  <svg className="w-5 h-5 text-blue-600" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 12l2 2 4-4m5.618-4.016A11.955 11.955 0 0112 2.944a11.955 11.955 0 01-8.618 3.04A12.02 12.02 0 003 9c0 5.591 3.824 10.29 9 11.622 5.176-1.332 9-6.03 9-11.622 0-1.042-.133-2.052-.382-3.016z" />
+                  </svg>
                   {t("trust.title")}
                 </h5>
-                <p className="text-gray-400 text-sm">
+                <p className="text-gray-600 text-sm">
                   {t("trust.description")}
                 </p>
               </div>
@@ -369,7 +449,7 @@ export default function Footer() {
                 {paymentMethods.map((method, index) => (
                   <div
                     key={index}
-                    className="bg-white rounded-lg p-2 shadow-sm"
+                    className="bg-white rounded-lg p-2 shadow-sm hover:shadow-md transition-shadow duration-200 border border-gray-200"
                     title={method.name}
                   >
                     {method.icon}
@@ -380,27 +460,27 @@ export default function Footer() {
           </div>
 
           {/* Bottom Bar */}
-          <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-gray-700">
-            <div className="text-gray-400 text-sm text-center md:text-left">
+          <div className="flex flex-col md:flex-row items-center justify-between gap-4 pt-8 border-t border-gray-200">
+            <div className="text-gray-500 text-sm text-center md:text-left">
               <p>
                 {t("copyright", { year: new Date().getFullYear() })}
               </p>
             </div>
             
-            <div className="flex items-center gap-6 text-sm text-gray-400">
-              <Link href="/privacidad" className="hover:text-amber-400 transition-colors">
+            <div className="flex items-center gap-6 text-sm text-gray-500">
+              <Link href="/privacidad" className="hover:text-blue-600 transition-colors duration-200 flex items-center gap-1 font-medium">
                 {t("legal.privacy")}
               </Link>
-              <Link href="/terminos" className="hover:text-amber-400 transition-colors">
+              <Link href="/terminos" className="hover:text-blue-600 transition-colors duration-200 flex items-center gap-1 font-medium">
                 {t("legal.terms")}
               </Link>
-              <Link href="/cookies" className="hover:text-amber-400 transition-colors">
+              <Link href="/cookies" className="hover:text-blue-600 transition-colors duration-200 flex items-center gap-1 font-medium">
                 {t("legal.cookies")}
               </Link>
             </div>
 
-            <div className="flex items-center gap-2 text-gray-400 text-sm">
-              <span>🇲🇽</span>
+            <div className="flex items-center gap-2 text-gray-500 text-sm font-medium">
+              <span className="text-lg">🇲🇽</span>
               <span>{t("madeInMexico")}</span>
             </div>
           </div>
