@@ -17,16 +17,16 @@ interface LanguageOption {
   nativeName: string;
 }
 
-interface NavbarProps {}
+// Eliminar interfaz vacía y usar type alias para props vacías
+type NavbarProps = Record<string, never>;
 
 // Constantes para mejor mantenibilidad
-const CONSTANTS = {
-  BREAKPOINTS: {
-    LG: 1024
-  },
-  ANIMATION: {
-    DURATION: 200
-  }
+const BREAKPOINTS = {
+  LG: 1024
+} as const;
+
+const ANIMATION = {
+  DURATION: 200
 } as const;
 
 const navLinks: NavLink[] = [
@@ -42,6 +42,60 @@ const languageOptions: LanguageOption[] = [
   { value: "en", label: "EN", flag: "🇺🇸", nativeName: "English" },
   { value: "fr", label: "FR", flag: "🇫🇷", nativeName: "Français" },
 ];
+
+// Tipo para la función de traducción
+type TranslateFunction = (key: string) => string;
+
+// Interfaces para los props de los componentes
+interface LogoLinkProps {
+  onCloseMenu: () => void;
+  t: TranslateFunction;
+  isScrolled: boolean;
+}
+
+interface DesktopNavigationProps {
+  pathname: string;
+  t: TranslateFunction;
+  currentLang: LanguageOption;
+  isDropdownOpen: boolean;
+  setIsDropdownOpen: (value: boolean) => void;
+  handleLanguageChange: (lang: string) => void;
+  selectedLanguage: string;
+}
+
+interface LanguageDropdownDesktopProps {
+  currentLang: LanguageOption;
+  isDropdownOpen: boolean;
+  setIsDropdownOpen: (value: boolean) => void;
+  handleLanguageChange: (lang: string) => void;
+  selectedLanguage: string;
+}
+
+interface DesktopCTAProps {
+  t: TranslateFunction;
+}
+
+interface MobileHamburgerProps {
+  menuOpen: boolean;
+  setMenuOpen: (value: boolean) => void;
+}
+
+interface MobileMenuProps {
+  menuOpen: boolean;
+  pathname: string;
+  t: TranslateFunction;
+  selectedLanguage: string;
+  handleLanguageChange: (lang: string) => void;
+  setMenuOpen: (value: boolean) => void;
+}
+
+interface ChevronIconProps {
+  isOpen: boolean;
+}
+
+interface HamburgerIconProps {
+  menuOpen: boolean;
+}
 
 export default function Header(_props: NavbarProps) {
   const [menuOpen, setMenuOpen] = useState<boolean>(false);
@@ -201,7 +255,7 @@ function NavbarSkeleton() {
   );
 }
 
-function LogoLink({ onCloseMenu, t, isScrolled }: { onCloseMenu: () => void; t: any; isScrolled: boolean }) {
+function LogoLink({ onCloseMenu, t, isScrolled }: LogoLinkProps) {
   return (
     <Link 
       href="/" 
@@ -239,7 +293,7 @@ function DesktopNavigation({
   setIsDropdownOpen, 
   handleLanguageChange, 
   selectedLanguage 
-}: any) {
+}: DesktopNavigationProps) {
   return (
     <div className="hidden lg:flex items-center gap-1">
       {navLinks.map((link) => (
@@ -291,7 +345,7 @@ function LanguageDropdownDesktop({
   setIsDropdownOpen,
   handleLanguageChange,
   selectedLanguage
-}: any) {
+}: LanguageDropdownDesktopProps) {
   return (
     <div className="relative language-dropdown ml-2">
       <button
@@ -333,7 +387,7 @@ function LanguageDropdownDesktop({
   );
 }
 
-function DesktopCTA({ t }: { t: any }) {
+function DesktopCTA({ t }: DesktopCTAProps) {
   return (
     <div className="hidden lg:flex items-center">
       <Link
@@ -347,7 +401,7 @@ function DesktopCTA({ t }: { t: any }) {
   );
 }
 
-function MobileHamburger({ menuOpen, setMenuOpen }: { menuOpen: boolean; setMenuOpen: (value: boolean) => void }) {
+function MobileHamburger({ menuOpen, setMenuOpen }: MobileHamburgerProps) {
   return (
     <button
       className="lg:hidden flex items-center justify-center w-10 h-10 rounded-xl hover:bg-gray-100/80 transition-all duration-200 group"
@@ -367,7 +421,7 @@ function MobileMenu({
   selectedLanguage, 
   handleLanguageChange, 
   setMenuOpen 
-}: any) {
+}: MobileMenuProps) {
   return (
     <div className={`lg:hidden overflow-hidden transition-all duration-300 ease-in-out  ${
       menuOpen ? 'max-h-[90vh]  opacity-100 pb-4' : 'max-h-0 opacity-0'
@@ -441,7 +495,7 @@ function MobileMenu({
 }
 
 // Iconos como componentes separados
-function ChevronIcon({ isOpen }: { isOpen: boolean }) {
+function ChevronIcon({ isOpen }: ChevronIconProps) {
   return (
     <svg 
       className={`w-3.5 h-3.5 text-gray-500 transition-transform duration-200 ${isOpen ? 'rotate-180' : ''}`}
@@ -462,7 +516,7 @@ function CheckIcon() {
   );
 }
 
-function HamburgerIcon({ menuOpen }: { menuOpen: boolean }) {
+function HamburgerIcon({ menuOpen }: HamburgerIconProps) {
   return (
     <div className="relative w-5 h-5">
       <span className={`absolute top-1/2 left-0 w-5 h-0.5 bg-gray-700 transform transition-all duration-300 ${

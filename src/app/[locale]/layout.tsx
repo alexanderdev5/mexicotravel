@@ -2,9 +2,7 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import {
   Montserrat,
-  Lilita_One,
-  Josefin_Sans,
-  Poppins,
+  Josefin_Sans
 } from "next/font/google";
 import "../globals.css";
 import { setRequestLocale } from 'next-intl/server';
