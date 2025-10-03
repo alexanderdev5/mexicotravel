@@ -15,6 +15,81 @@
       "contact": "Contact Us"
     }
   },
+  "footer": {
+  "brand": "Mexico Travel",
+  "tagline": "Discover the Magic of Mexico",
+  "description": "Your gateway to unique experiences across Mexico’s most fascinating destinations. Authentic journeys, unforgettable moments.",
+
+  "destinations": {
+    "title": "Destinations",
+    "beaches": "Paradise Beaches",
+    "cities": "Vibrant Cities",
+    "magicTowns": "Magical Towns",
+    "archaeology": "Archaeological Sites",
+    "nature": "Eco-Tourism & Adventure"
+  },
+
+  "experiences": {
+    "title": "Experiences",
+    "gastronomy": "Gastronomic Tours",
+    "adventure": "Extreme Adventure",
+    "culture": "Culture & Tradition",
+    "romantic": "Romantic Getaways",
+    "family": "Family Trips"
+  },
+
+  "company": {
+    "title": "Company",
+    "about": "About Us",
+    "blog": "Travel Blog",
+    "careers": "Work with Us",
+    "press": "Press",
+    "sustainability": "Sustainability"
+  },
+
+  "support": {
+    "title": "Support",
+    "help": "Help Center",
+    "contact": "Contact",
+    "faq": "FAQ",
+    "cancellations": "Cancellations",
+    "guarantee": "Travel Guarantee"
+  },
+
+  "legal": {
+    "title": "Legal",
+    "privacy": "Privacy Policy",
+    "terms": "Terms of Service",
+    "cookies": "Cookie Policy",
+    "legalNotice": "Legal Notice",
+    "conditions": "General Conditions"
+  },
+
+  "newsletter": {
+    "title": "Newsletter",
+    "placeholder": "Your email address",
+    "subscribe": "Subscribe",
+    "success": "Thank you for subscribing! We've sent you a confirmation email.",
+    "disclaimer": "Receive exclusive offers and travel tips every week."
+  },
+
+  "contact": {
+    "title": "Contact"
+  },
+
+  "social": {
+    "title": "Follow Us"
+  },
+
+  "trust": {
+    "title": "Book with Confidence",
+    "description": "Secure payments & best price guarantee"
+  },
+
+  "copyright": "© {year} Mexico Travel. All rights reserved.",
+  "madeInMexico": "Made with ❤️ in Mexico"
+}
+,
   "Home": {
     "metaTitle": "Mexico Travel App | Tours & Experiences in Cancun, Tulum, Cozumel & More 🌴",
     "metaDescription": "Discover dream beaches and unique adventures in Cancun, Playa del Carmen, Tulum, Isla Mujeres, Holbox, Cozumel, Bacalar, Puerto Morelos and Chichén Itzá. Book with Mexico Travel App and live the adventure you’ve always dreamed of.",

@@ -10,7 +10,9 @@ import { hasLocale } from 'next-intl';
 import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { ReactNode } from 'react';
-import Navbar from "@/components/Header";
+import Footer from "@/components/Footer";
+import TopHeader from "@/components/TopHeader";
+import Header from "@/components/Header";
 
 // Definir tipos para las props - ahora params es una Promise
 interface LocaleLayoutProps {
@@ -64,8 +66,10 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
     >
       <body suppressHydrationWarning={true}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-          <Navbar />
+          <TopHeader />
+          <Header />
             {children}
+            <Footer />
         </NextIntlClientProvider>
       </body>
     </html>

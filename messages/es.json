@@ -15,6 +15,82 @@
       "contact": "Contáctanos"
     }
   },
+
+  "footer" : {
+  "brand": "Mexico Travel",
+  "tagline": "Descubre la magia de México",
+  "description": "Tu puerta de entrada a experiencias únicas en los destinos más fascinantes de México. Viajes auténticos, momentos inolvidables.",
+  
+  "destinations": {
+    "title": "Destinos",
+    "beaches": "Playas Paradisíacas",
+    "cities": "Ciudades Vibrantes",
+    "magicTowns": "Pueblos Mágicos",
+    "archaeology": "Zonas Arqueológicas",
+    "nature": "Ecoturismo y Aventura"
+  },
+  
+  "experiences": {
+    "title": "Experiencias",
+    "gastronomy": "Tours Gastronómicos",
+    "adventure": "Aventura Extrema",
+    "culture": "Cultura y Tradición",
+    "romantic": "Escapadas Románticas",
+    "family": "Viajes en Familia"
+  },
+  
+  "company": {
+    "title": "Empresa",
+    "about": "Sobre Nosotros",
+    "blog": "Blog de Viajes",
+    "careers": "Trabaja con Nosotros",
+    "press": "Prensa",
+    "sustainability": "Sostenibilidad"
+  },
+  
+  "support": {
+    "title": "Soporte",
+    "help": "Centro de Ayuda",
+    "contact": "Contacto",
+    "faq": "Preguntas Frecuentes",
+    "cancellations": "Cancelaciones",
+    "guarantee": "Garantía de Viaje"
+  },
+  
+  "legal": {
+    "title": "Legal",
+    "privacy": "Privacidad",
+    "terms": "Términos de Servicio",
+    "cookies": "Política de Cookies",
+    "legalNotice": "Aviso Legal",
+    "conditions": "Condiciones Generales"
+  },
+  
+  "newsletter": {
+    "title": "Newsletter",
+    "placeholder": "Tu correo electrónico",
+    "subscribe": "Suscribirse",
+    "success": "¡Gracias por suscribirte! Te hemos enviado un email de confirmación.",
+    "disclaimer": "Recibe ofertas exclusivas y tips de viaje cada semana."
+  },
+  
+  "contact": {
+    "title": "Contacto"
+  },
+  
+  "social": {
+    "title": "Síguenos"
+  },
+  
+  "trust": {
+    "title": "Reserva con Confianza",
+    "description": "Pagos seguros y garantía de mejor precio"
+  },
+  
+  "copyright": "© {year} Mexico Travel. Todos los derechos reservados.",
+  "madeInMexico": "Hecho con ❤️ en México"
+
+},
   "Home": {
     "metaTitle": "México Travel App | Tours y Experiencias en Cancún, Tulum, Cozumel y más 🌴",
     "metaDescription": "Descubre playas de ensueño y experiencias únicas en Cancún, Playa del Carmen, Tulum, Isla Mujeres, Holbox, Cozumel, Bacalar, Puerto Morelos y Chichén Itzá. Reserva con México Travel App y vive la aventura que siempre soñaste.",
@@ -25,6 +101,7 @@
     "ctaBook": "Reservar mi Tour",
     "imageAlt":"Imagen de la Aplicación de Viajes y Tours"
   },
+
  
   "NotFoundPage": {
     "title": "Página No Encontrada",
