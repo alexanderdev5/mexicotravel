@@ -1,0 +1,33 @@
+{
+  "header": {
+    "home": "Accueil",
+    "brand": "Mexico Travel App",
+    "tagline": "Découvrir • Explorer • Vivre le Mexique",
+    "language": "Langue",
+    "login": "Se connecter",
+    "register": "Créer un compte",
+    "bookNow": "Réserver Maintenant",
+    "nav": {
+      "home": "Accueil",
+      "destinations": "Destinations",
+      "experiences": "Tours & Expériences",
+      "offers": "Offres Exclusives",
+      "contact": "Contactez-nous"
+    }
+  },
+  "Home": {
+    "metaTitle": "Mexico Travel App | Tours & Expériences à Cancún, Tulum, Cozumel et plus 🌴",
+    "metaDescription": "Découvrez des plages de rêve et des expériences uniques à Cancún, Playa del Carmen, Tulum, Isla Mujeres, Holbox, Cozumel, Bacalar, Puerto Morelos et Chichén Itzá. Réservez avec Mexico Travel App et vivez l’aventure dont vous avez toujours rêvé.",
+    "metaSiteName": "Mexico Travel App",
+    "heroTitle": "Vivez le Paradis dans les Caraïbes Mexicaines",
+    "heroSubtitle": "De Cancún à Chichén Itzá, profitez de tours, de plages, de culture et d’aventures inoubliables dans les plus belles destinations du Mexique.",
+    "ctaExplore": "Explorer les Destinations",
+    "ctaBook": "Réserver mon Tour",
+    "imageAlt":"Image de l'application de voyage et de tours"
+  },
+  "NotFoundPage": {
+    "title": "Page Introuvable",
+    "description": "Désolé, nous n’avons pas trouvé la page que vous recherchez. Découvrez nos destinations et commencez votre voyage avec Mexico Travel App.",
+    "goBack": "Retour à l’Accueil"
+  }
+}
