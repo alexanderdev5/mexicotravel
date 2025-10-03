@@ -67,5 +67,5 @@ export default function HomePage({ params }: HomePageProps) {
   // Enable static rendering
   setRequestLocale(locale);
 
-  return <HomeComponent locale={locale} />;
+  return <HomeComponent />;
 }
