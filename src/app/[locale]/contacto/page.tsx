@@ -1,7 +1,6 @@
 import { getTranslations } from "next-intl/server";
 import { use } from 'react';
-import { setRequestLocale } from 'next-intl/server';
-import HomeComponent from "./home/HomeComponent";
+import ContactoComponent from "./ContactoComponent";
 
 // Define the type for params
 interface PageParams {
@@ -13,7 +12,7 @@ interface PageParams {
 // Función generateMetadata corregida
 export async function generateMetadata({ params }: { params: Promise<PageParams> }) {
   const { locale } = await params;
-  const t = await getTranslations({ locale, namespace: "Home" });
+  const t = await getTranslations({ locale, namespace: "Contacto" });
 
   const siteUrl = "https://mexicotravel.vercel.app";
   const title = t("metaTitle");
@@ -58,8 +57,8 @@ export async function generateMetadata({ params }: { params: Promise<PageParams>
   };
 }
 
-export default function HomePage( ) {
+export default function ContactoPage( ) {
 
 
-  return <HomeComponent />;
+  return <ContactoComponent />;
 }

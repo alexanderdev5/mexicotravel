@@ -114,6 +114,91 @@
   }
 }
 
+
+
+  },
+
+
+  "Contacto": {
+    "metaTitle": "Contact | Application de Voyage Mexique - Aide à la Réservation de Votre Aventure Mexicaine",
+    "metaDescription": "Besoin d'aide pour planifier votre voyage à Cancún, Tulum ou Chichén Itzá ? Contactez Mexico Travel App pour une assistance personnalisée, des réservations d'excursions et des conseils de voyage.",
+    "metaSiteName": "Application de Voyage Mexique",
+    "imageUrl": "https://images.unsplash.com/photo-1668810074709-30f08bd3b12f?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "imageAlt": "Image de l'Application de Voyages et d'Excursions",
+    "badge": "✨ Expériences 100% Authentiques",
+    "trust": {
+      "check": "Guides locaux certifiés",
+      "star": "+10 000 voyageurs satisfaits",
+      "heart": "Tourisme durable"
+    },
+    "title": "Des questions | Nous contacter ?",
+    "subtitle": "Des questions sur nos excursions ? Besoin d'aide pour planifier votre itinéraire ? Nos experts en voyage sont là pour réaliser vos rêves des Caraïbes.",
+    "formTitle": "Parlez-nous de Votre Voyage de Rêve",
+    "formFields": {
+      "name": "Nom Complet",
+      "email": "Adresse E-mail",
+      "phone": "Numéro de Téléphone",
+      "company": "Taille du Groupe",
+      "subject": "Comment pouvons-nous vous aider ?",
+      "message": "Parlez-nous de vos projets de voyage et de vos préférences..."
+    },
+    "submitButton": "Envoyer le Message",
+    "loadingButton": "Envoi en cours...",
+    "successMessage": "Merci ! Nous avons bien reçu votre message et vous contacterons dans les 24 heures.",
+    "errorMessage": "Quelque chose s'est mal passé. Veuillez réessayer ou nous contacter directement.",
+    "contactInfo": {
+      "title": "Nous Contacter",
+      "phone": {
+        "title": "Appelez-nous",
+        "content": "+52 998 123 4567"
+      },
+      "email": {
+        "title": "Écrivez-nous",
+        "content": "hello@mexicotravelapp.com"
+      },
+      "location": {
+        "title": "Visitez Notre Bureau",
+        "content": "Cancún, Quintana Roo, Mexique"
+      },
+      "schedule": {
+        "title": "Heures de Service",
+        "content": "Lun-Dim : 7h00 - 22h00"
+      }
+    },
+    "socialMedia": {
+      "title": "Suivez Nos Aventures",
+      "whatsapp": "Discuter sur WhatsApp",
+      "instagram": "Suivre sur Instagram",
+      "facebook": "Aimer sur Facebook",
+      "tiktok": "Suivre sur TikTok"
+    },
+    "validation": {
+      "name": {
+        "min": "Le nom doit contenir au moins 2 caractères",
+        "max": "Le nom ne peut pas dépasser 50 caractères",
+        "invalid": "Le nom ne peut contenir que des lettres et des espaces"
+      },
+      "email": {
+        "invalid": "Veuillez saisir une adresse e-mail valide",
+        "min": "L'e-mail doit contenir au moins 5 caractères",
+        "max": "L'e-mail ne peut pas dépasser 100 caractères"
+      },
+      "phone": {
+        "invalid": "Veuillez saisir un numéro de téléphone valide"
+      },
+      "company": {
+        "max": "La taille du groupe ne peut pas dépasser 50 caractères"
+      },
+      "subject": {
+        "required": "Veuillez sélectionner un sujet",
+        "max": "Le sujet ne peut pas dépasser 100 caractères"
+      },
+      "message": {
+        "min": "Le message doit contenir au moins 10 caractères",
+        "max": "Le message ne peut pas dépasser 1000 caractères",
+        "invalid": "Le message doit contenir un texte valide"
+      }
+    }
   },
   "NotFoundPage": {
     "title": "Page Introuvable",

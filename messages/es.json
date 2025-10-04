@@ -15,92 +15,80 @@
       "contact": "Contáctanos"
     }
   },
-
-  "footer" : {
-  "brand": "Mexico Travel",
-  "tagline": "Descubre la magia de México",
-  "description": "Tu puerta de entrada a experiencias únicas en los destinos más fascinantes de México. Viajes auténticos, momentos inolvidables.",
-  
-  "destinations": {
-    "title": "Destinos",
-    "beaches": "Playas Paradisíacas",
-    "cities": "Ciudades Vibrantes",
-    "magicTowns": "Pueblos Mágicos",
-    "archaeology": "Zonas Arqueológicas",
-    "nature": "Ecoturismo y Aventura"
+  "footer": {
+    "brand": "Mexico Travel",
+    "tagline": "Descubre la magia de México",
+    "description": "Tu puerta de entrada a experiencias únicas en los destinos más fascinantes de México. Viajes auténticos, momentos inolvidables.",
+    "destinations": {
+      "title": "Destinos",
+      "beaches": "Playas Paradisíacas",
+      "cities": "Ciudades Vibrantes",
+      "magicTowns": "Pueblos Mágicos",
+      "archaeology": "Zonas Arqueológicas",
+      "nature": "Ecoturismo y Aventura"
+    },
+    "experiences": {
+      "title": "Experiencias",
+      "gastronomy": "Tours Gastronómicos",
+      "adventure": "Aventura Extrema",
+      "culture": "Cultura y Tradición",
+      "romantic": "Escapadas Románticas",
+      "family": "Viajes en Familia"
+    },
+    "company": {
+      "title": "Empresa",
+      "about": "Sobre Nosotros",
+      "blog": "Blog de Viajes",
+      "careers": "Trabaja con Nosotros",
+      "press": "Prensa",
+      "sustainability": "Sostenibilidad"
+    },
+    "support": {
+      "title": "Soporte",
+      "help": "Centro de Ayuda",
+      "contact": "Contacto",
+      "faq": "Preguntas Frecuentes",
+      "cancellations": "Cancelaciones",
+      "guarantee": "Garantía de Viaje"
+    },
+    "legal": {
+      "title": "Legal",
+      "privacy": "Privacidad",
+      "terms": "Términos de Servicio",
+      "cookies": "Política de Cookies",
+      "legalNotice": "Aviso Legal",
+      "conditions": "Condiciones Generales"
+    },
+    "newsletter": {
+      "title": "Newsletter",
+      "placeholder": "Tu correo electrónico",
+      "subscribe": "Suscribirse",
+      "success": "¡Gracias por suscribirte! Te hemos enviado un email de confirmación.",
+      "disclaimer": "Recibe ofertas exclusivas y tips de viaje cada semana."
+    },
+    "contact": {
+      "title": "Contacto"
+    },
+    "social": {
+      "title": "Síguenos"
+    },
+    "trust": {
+      "title": "Reserva con Confianza",
+      "description": "Pagos seguros y garantía de mejor precio"
+    },
+    "copyright": "© {year} Mexico Travel. Todos los derechos reservados.",
+    "madeInMexico": "Hecho con ❤️ por Alex"
   },
-  
-  "experiences": {
-    "title": "Experiencias",
-    "gastronomy": "Tours Gastronómicos",
-    "adventure": "Aventura Extrema",
-    "culture": "Cultura y Tradición",
-    "romantic": "Escapadas Románticas",
-    "family": "Viajes en Familia"
-  },
-  
-  "company": {
-    "title": "Empresa",
-    "about": "Sobre Nosotros",
-    "blog": "Blog de Viajes",
-    "careers": "Trabaja con Nosotros",
-    "press": "Prensa",
-    "sustainability": "Sostenibilidad"
-  },
-  
-  "support": {
-    "title": "Soporte",
-    "help": "Centro de Ayuda",
-    "contact": "Contacto",
-    "faq": "Preguntas Frecuentes",
-    "cancellations": "Cancelaciones",
-    "guarantee": "Garantía de Viaje"
-  },
-  
-  "legal": {
-    "title": "Legal",
-    "privacy": "Privacidad",
-    "terms": "Términos de Servicio",
-    "cookies": "Política de Cookies",
-    "legalNotice": "Aviso Legal",
-    "conditions": "Condiciones Generales"
-  },
-  
-  "newsletter": {
-    "title": "Newsletter",
-    "placeholder": "Tu correo electrónico",
-    "subscribe": "Suscribirse",
-    "success": "¡Gracias por suscribirte! Te hemos enviado un email de confirmación.",
-    "disclaimer": "Recibe ofertas exclusivas y tips de viaje cada semana."
-  },
-  
-  "contact": {
-    "title": "Contacto"
-  },
-  
-  "social": {
-    "title": "Síguenos"
-  },
-  
-  "trust": {
-    "title": "Reserva con Confianza",
-    "description": "Pagos seguros y garantía de mejor precio"
-  },
-  
-  "copyright": "© {year} Mexico Travel. Todos los derechos reservados.",
-  "madeInMexico": "Hecho con ❤️ por Alex"
-
-},
   "Home": {
     "metaTitle": "México Travel App | Tours y Experiencias en Cancún, Tulum, Cozumel y más 🌴",
     "metaDescription": "Descubre playas de ensueño y experiencias únicas en Cancún, Playa del Carmen, Tulum, Isla Mujeres, Holbox, Cozumel, Bacalar, Puerto Morelos y Chichén Itzá. Reserva con México Travel App y vive la aventura que siempre soñaste.",
     "metaSiteName": "México Travel App",
+    "imageAlt": "Imagen de la Aplicación de Viajes y Tours",
     "heroTitle": "Vive el Paraíso en el Caribe Mexicano",
     "heroSubtitle": "Desde Cancún hasta Chichén Itzá, disfruta tours, playas, cultura y aventuras inolvidables en los destinos más hermosos de México.",
     "ctaExplore": "Explorar Destinos",
     "ctaBook": "Reservar mi Tour",
-    "imageAlt":"Imagen de la Aplicación de Viajes y Tours",
-     "Hero": {
+    "Hero": {
       "title": "Vive México Como Nunca Antes",
       "subtitle": "Descubre la magia detrás de cada rincón. Desde playas de ensueño hasta ciudades llenas de historia, te llevamos a experiencias que transforman viajeros en amantes de México",
       "primaryButton": "Descubrir Experiencias",
@@ -115,17 +103,88 @@
       }
     }
   },
-
-    "HeroSection": {
-    "authenticExperiences": "✨ Experiencias 100% Auténticas",
-    "certifiedGuides": "Guías locales certificados",
-    "satisfiedTravelers": "+10,000 viajeros satisfechos",
-    "sustainableTourism": "Turismo sostenible",
-    "primaryButton": "Explorar Destinos",
-    "secondaryButton": "Rutas Personalizadas"
+  
+  "Contacto": {
+    "metaTitle": "Contacto | México Travel App - Ayuda para Reservar tu Aventura Mexicana",
+    "metaDescription": "¿Necesitas ayuda planificando tu viaje a Cancún, Tulum o Chichén Itzá? Contacta a México Travel App para asistencia personalizada, reservas de tours y consejos de viaje.",
+    "metaSiteName": "México Travel App",
+    "imageUrl": "https://images.unsplash.com/photo-1668810074709-30f08bd3b12f?q=80&w=1171&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D",
+    "imageAlt": "Imagen de la Aplicación de Viajes y Tours",
+    "badge": "✨ Experiencias 100% Auténticas",
+    "trust": {
+      "check": "Guías locales certificados",
+      "star": "+10,000 viajeros satisfechos",
+      "heart": "Turismo sostenible"
+    },
+    "title": "Tienes alguna duda | Contactanos?",
+    "subtitle": "¿Tienes preguntas sobre nuestros tours? ¿Necesitas ayuda planificando tu itinerario? Nuestros expertos en viajes están aquí para hacer realidad tus sueños caribeños.",
+    "formTitle": "Cuéntanos Sobre Tu Viaje Soñado",
+    "formFields": {
+      "name": "Nombre Completo",
+      "email": "Correo Electrónico",
+      "phone": "Número de Teléfono",
+      "company": "Tamaño del Grupo",
+      "subject": "¿En qué podemos ayudarte?",
+      "message": "Cuéntanos sobre tus planes de viaje y preferencias..."
+    },
+    "submitButton": "Enviar Mensaje",
+    "loadingButton": "Enviando...",
+    "successMessage": "¡Gracias! Hemos recibido tu mensaje y te contactaremos en menos de 24 horas.",
+    "errorMessage": "Algo salió mal. Por favor intenta de nuevo o contáctanos directamente.",
+    "contactInfo": {
+      "title": "Contáctanos",
+      "phone": {
+        "title": "Llámanos",
+        "content": "+52 998 123 4567"
+      },
+      "email": {
+        "title": "Escríbenos",
+        "content": "hola@mexicotravelapp.com"
+      },
+      "location": {
+        "title": "Visita Nuestra Oficina",
+        "content": "Cancún, Quintana Roo, México"
+      },
+      "schedule": {
+        "title": "Horario de Atención",
+        "content": "Lun-Dom: 7:00 AM - 10:00 PM"
+      }
+    },
+    "socialMedia": {
+      "title": "Sigue Nuestras Aventuras",
+      "whatsapp": "Chatea por WhatsApp",
+      "instagram": "Síguenos en Instagram",
+      "facebook": "Danos Like en Facebook",
+      "tiktok": "Síguenos en TikTok"
+    },
+    "validation": {
+      "name": {
+        "min": "El nombre debe tener al menos 2 caracteres",
+        "max": "El nombre no puede exceder 50 caracteres",
+        "invalid": "El nombre solo puede contener letras y espacios"
+      },
+      "email": {
+        "invalid": "Por favor ingresa un email válido",
+        "min": "El email debe tener al menos 5 caracteres",
+        "max": "El email no puede exceder 100 caracteres"
+      },
+      "phone": {
+        "invalid": "Por favor ingresa un número de teléfono válido"
+      },
+      "company": {
+        "max": "El tamaño del grupo no puede exceder 50 caracteres"
+      },
+      "subject": {
+        "required": "Por favor selecciona un asunto",
+        "max": "El asunto no puede exceder 100 caracteres"
+      },
+      "message": {
+        "min": "El mensaje debe tener al menos 10 caracteres",
+        "max": "El mensaje no puede exceder 1000 caracteres",
+        "invalid": "El mensaje debe contener texto válido"
+      }
+    }
   },
-
- 
   "NotFoundPage": {
     "title": "Página No Encontrada",
     "description": "Lo sentimos, no pudimos encontrar la página que buscas. Descubre nuestros destinos y empieza tu viaje con México Travel App.",
