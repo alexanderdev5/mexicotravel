@@ -11,8 +11,8 @@ import { notFound } from 'next/navigation';
 import { routing } from '@/i18n/routing';
 import { ReactNode } from 'react';
 import Footer from "@/components/Footer";
-import TopHeader from "@/components/TopHeader";
 import Header from "@/components/Header";
+import TopHeader from "@/components/TopHeader";
 
 // Definir tipos para las props - ahora params es una Promise
 interface LocaleLayoutProps {
@@ -66,7 +66,7 @@ export default async function LocaleLayout({ children, params }: LocaleLayoutPro
     >
       <body suppressHydrationWarning={true}>
         <NextIntlClientProvider locale={locale} messages={messages}>
-       
+          
           <Header />
             {children}
             <Footer />
